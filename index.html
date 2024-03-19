@@ -1,69 +1,80 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styling.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .about, .portfolio, .contact {
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <div class="headd">
-    
-    <img src="dp.jpg">
-    <header> 
-      <h1>Bishant Rajbanshi</h1>
-     
+    <header>
+        <div class="container">
+            <h1>Your Name - Portfolio</h1>
+        </div>
     </header>
-  </div>
-  <div class="imagecontainer">
-    
-    
-    <div class="list">
-      
-      <nav>
-        <ul>
-          <h2>Bishant Rajbanshi</h2> 
-          <li> <a href="#about">About</a></li>
-          <li><a href="#Education">Education</a></li>
-          <li><a href="#Interests">Interests</a></li>
-          <li><a href="#Contacts">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="sectionsbody">
-    <section id="about">
-      <h2>About me </h2>
-      <p>Hello, I'm Bishant Rajbanshi, A passionate and ambitious student currently persuing Bsc(hons) in Computer Science at Herald college kathmandu  and always eager to explore new opportunities for learning and growth. </p>
+    <nav>
+        <div class="container">
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>This is a brief section about you. Highlight your background, experiences, and what you're passionate about.</p>
+        </div>
     </section>
-    <section id="Education">
-      <h1>Education</h1>
-      <p>I am currently enrolled in a BSc (Hons) in Computer Science. I completed my school level and +2 level as a science major at Sagarmatha Secondary Boarding School located at Biratnagar.</p>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Here you can showcase your work. You can replace these placeholders with images, project descriptions, and links to live projects.</p>
+        </div>
     </section>
-    <section id="Interests">
-      <h2>Interests</h2>
-      <p>In addition to my studies, I have a strong interest in a variety of hobbies. Football is one of my favourite things. I love playing and drawing inspiration from my favourite player, Cristiano, as much as watching him. I enjoy playing video games with friends when I have free time, since it's a nice change of pace. I also like to read books.</p>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Provide your email, phone number, or a simple contact form here. Also, link to your social media profiles if desired.</p>
+        </div>
     </section>
-    <section id="Contacts" class="contact-form">
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="Name" name="Name" required>
-        
-        <label for="Email">Email:</label>
-        <input type="text" id="Email" name="Email" required>
-        
-        <label for="Message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-    <footer>
-      <p>
-        &copy;2023 Bishant Rajbanshi. All rights reserved
-      </p>
-    </footer>
-    
-  </div>
-  </body>
-  </html>
+</body>
+</html>
